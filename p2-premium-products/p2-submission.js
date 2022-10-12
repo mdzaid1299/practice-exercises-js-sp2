@@ -38,3 +38,6 @@ const products = [
 ];
 //filter premium products
 //Write code here
+var filterResult = products.filter(primiumItem => {return(primiumItem.price> 300)})
+console.log(filterResult)
+// primium prtoduct Array

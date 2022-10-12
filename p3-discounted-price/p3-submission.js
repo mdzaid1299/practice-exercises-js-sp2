@@ -38,5 +38,15 @@ const products = [
 ];
 
 //Find the discounted price fro non-premium products
+let  arrayOfNonPremiumProducts = products.filter(nonPrimiumProduct=>{
+     return (nonPrimiumProduct.price < 300)} )
+console.log(arrayOfNonPremiumProducts)
+
 
 ///Write code here
+
+
+let mapArray = arrayOfNonPremiumProducts.map(item =>{return(item.price - ((item.price * 15 ) / 100))})
+console.log(" the array of non-premium products with discounted rates.")
+console.log( mapArray)
+
